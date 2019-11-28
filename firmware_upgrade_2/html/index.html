@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Atualização do roteador</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Atualização</span>
+                <span class="heading-primary--sub">Disponível</span>
+            </h1>
+
+            <a href="#section-update" class="btn btn--white btn--animation">Atualizar »</a>
+        </div>
+    </header>
+    <main>
+        <section class="section-new">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    O que tem de novo?
+                </h2>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-connection"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Aumento no alcance do WIFI! Agora você poderá utilizar sua rede de uma distância
+                        muito maior.
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-meter"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Sua velocidade também melhorará e muito! Atualize agora e tenha 10MB a mais.
+
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-bug"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Correção de erros e bugs recentes. Recentemente, tivemos problemas com erros e 
+                        quedas de redes dos nossos clientes, e ao atualizar você não terá mais esses problemas.
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-shield"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Esse update trás uma nova segurança inquebrável, que deixará você e sua família 100% protegidos!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-update" id="section-update">
+            <div class="update u-margin-bottom-huge">
+                <div class="update__form">
+                    <form class="form" onsubmit="return false">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Comece a atualização agora
+                            </h2>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" class="form__input" placeholder="Senha do WIFI" id="pass" pattern="[A-Za-z0-9!@#$%^&*-+_=]{8,}"
+                                required />
+                            <label for="pass" class="form__label">Senha</label>
+                        </div>
+
+                        <div class="form__group">
+                            <p class="paragraph">
+                                Ao clicar em ATUALIZAR você concorda com os
+                                <a class="btn-text" href="#">
+                                termos e condições.
+                                </a>
+                            </p>
+                        </div>
+
+
+                        <div class="form__group">
+                            <button class="btn btn--green" id="form-button">ATUALIZAR →</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress__bar">
+                </div>
+                <div class="progress__text">
+                    <span class="progress__text--main" id="progress__percentage">0%</span>
+                    <span class="progress__text--sub">Completo</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p>
+                Copyright © by AMERICANET. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
